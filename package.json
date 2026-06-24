@@ -1,0 +1,23 @@
+{
+  "name": "wanglei-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "build:css": "tailwindcss -i ./tailwind.input.css -o ./styles.css --minify",
+    "build:liquid": "esbuild ././src/liquid-ether/mount.jsx --bundle --minify --format=iife --jsx=automatic --outfile=./liquid-ether.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.184.0",
+    "vite": "^7.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
